@@ -20,7 +20,24 @@ header > img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 4rem;
 }
+
+.navbar {
+    background-color: #000000c6;
+    margin: 0.5rem;
+    border-radius: 20px;
+}
+
+
+.navbar a {
+    float: left;
+    padding: 0.5rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    width: 25%;
+  }
 
 nav ul {
     list-style: none;
@@ -29,6 +46,7 @@ nav ul {
 
 nav li {
     display: inline-block;
+    
 }
 
 section {
@@ -49,4 +67,9 @@ footer div {
 
 footer > div > img {
     width: 2rem;
+}
+
+.copyright {
+    text-align: right;
+    border-top: solid;
 }
