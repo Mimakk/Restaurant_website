@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* #EDEFEE; */
+/* #EDEFEE */
 *, 
 *::before, 
 *::after {
@@ -12,87 +12,48 @@ body {
     font-family:"Poppins", sans-serif;
 }
 
-h1 {
-    font-size: 3rem;
-}
-
-h2 {
-    font-size: 2rem;
-}
-
-a {
-    text-decoration: none;
-}
-
-header {
+.nav-list {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-header > img {
-    max-width: 40%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 4rem;
-}
-
-.navbar {
-    background-color: #495e57;
-    margin: 0.5rem;
-    border-radius: 20px;
-}
-
-
-.navbar a {
-    float: left;
-    padding: 0.5rem;
-    color: white;
-    font-size: 1.3rem;
-    width: 25%;
-  }
-
-nav ul {
+.nav-item {
     list-style: none;
+    padding-right: 1rem;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    padding: 1rem 2rem;
+}
+
+.nav-item:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+    padding: 0.5rem;
+}
+
+.nav-item:not(:first-child) a:hover {
+    background-color: #495e57;
+    color: whitesmoke;
+    border-radius: 30px;
+}
+
+#logo {
+    max-width: 20vh;
+}
+
+.promotion {
+    background-color: #495e57;
+    padding: 2rem;
+    color: whitesmoke;
     text-align: center;
-}
-
-nav li {
-    display: inline-block;
-    
-}
-
-section {
-    display: flex;
-}
-
-.promotion, .sections {
-    background-color: #f4cf1490;
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-    border-radius: 20px;
 }
 
 .promotion h1 {
-    text-align: center;
-}
-
-article {
-    flex: 1;
-    margin: 0.7rem;
-}
-
-footer {
-    display: flex;
-}
-
-footer div {
-    flex: 1;
-}
-
-footer > div > img {
-    width: 2rem;
-}
-
-.copyright {
-    text-align: right;
-    border-top: solid;
+    font-size: 50px;
+    padding: 1rem;
+    text-shadow: 2px 2px  #f5f5f54a;
 }
