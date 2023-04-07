@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* #EDEFEE */
+
+/* on :hover
+from 30% 70% 56% 44% / 30% 30% 70% 70% 
+to 73% 27% 38% 62% / 72% 59% 41% 28%  */
+
 *, 
 *::before, 
 *::after {
@@ -10,6 +14,24 @@
 
 body {
     font-family:"Poppins", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
+    color: #495e57;
+}
+
+h1 {
+    font-size: 23px;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+nav {
+    background-color: #f3c922;
 }
 
 .nav-list {
@@ -45,15 +67,79 @@ body {
     max-width: 20vh;
 }
 
+.section-first{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 .promotion {
-    background-color: #495e57;
+    max-width: 70vh;
+    max-height: 70vh;
+    /* background-color: #495e57; */
     padding: 2rem;
-    color: whitesmoke;
+    color: black;
     text-align: center;
 }
 
 .promotion h1 {
     font-size: 50px;
     padding: 1rem;
-    text-shadow: 2px 2px  #f5f5f54a;
+    color: #495e57;
 }
+
+
+.main-bowl {
+    max-width: 50vh;
+    max-height: 50vh;
+    border-radius: 30% 70% 56% 44% / 30% 30% 70% 70%;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+.main-bowl:hover {
+    animation-name: example;
+    animation-duration: 4s;
+    animation-play-state: running;
+}
+      
+@keyframes example {
+    0% {border-radius: 30% 70% 56% 44% / 30% 30% 70% 70%;}
+    33% {border-radius: 73% 27% 38% 62% / 31% 59% 41% 69%;}
+    66% {border-radius: 84% 16% 64% 36% / 57% 59% 41% 43%;}
+}
+
+.scrolling-text-wrapper .scrolling-text {
+    width: 200%;
+    white-space: nowrap;
+    animation-name: textScroll;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.scrolling-text-wrapper {
+    font-size: 4rem;
+    overflow: hidden;
+    margin: 5px 0;
+    letter-spacing: 5px;
+}
+
+.stroked-text {
+    color: white;
+    text-shadow: -1px -1px 0 #495e57, 1px -1px 0 #495e57, -1px 1px 0 #495e57, 1px 1px 0 #495e57;
+}
+
+@keyframes textScroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
