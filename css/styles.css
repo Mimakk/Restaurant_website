@@ -264,7 +264,7 @@ h2.sub-headding {
 }
 
 .menu-items article {
-    max-width: 40vh;
+    max-width: 40vh;   
 }
 
 .left-menu h3, .middle-menu h3, .right-menu h3 {
@@ -276,4 +276,59 @@ h2.sub-headding {
 /* Book a Table Section */
 /*  */
 
+main.book-a-table {
+    display: flex;
+    justify-content: center;
+}
 
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+    width: 100vh;
+    justify-content: center;
+    text-align: center;
+    border: 4px solid #495e57;
+    margin: 4rem;
+}
+
+.form-group {
+    margin: 0.75rem; 
+}
+
+.submit-button {
+    margin: 2rem;
+    border: 0;
+    text-decoration: none;
+    background-color: #495e57;
+    color: whitesmoke;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+}
+
+.submit-button:hover {
+    color: #495e57;
+    background-color: #f3c922;
+}
+
+#dropdown {
+    margin: 1rem;
+    border: 3px solid #495e57;
+    text-decoration: none;
+    background-color: white;
+    color: #495e57;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+}
+
+.date {
+    margin: 1rem;
+    border: 3px solid #495e57;
+    text-decoration: none;
+    background-color: white;
+    color: #495e57;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+}

@@ -36,11 +36,11 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main class="book-a-table">
         <div class="book">
-            <form id="survey-form"></form>
+            <form id="survey-form">
                 <div class="form-group">
-                    <p>Select A Location</p>
+                    <h2>Select A Location</h2>
                     <select id="dropdown" name="cat-or-dog" class="form-control" required>
                         <option disabled select value selected>Select an option</option>
                         <option value="1" >BEACON HILL</option>
@@ -55,11 +55,11 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <p>Select Date</p>
-                    <input type="date" class="form-control">
+                    <h2>Select Date</h2>
+                    <input type="date" class="form-control date" >
                 </div>
                 <div class="form-group">
-                    <p>Select A Time</p>
+                    <h2>Select A Time</h2>
                     <select id="dropdown" name="cat-or-dog" class="form-control" required>
                         <option value="1" >9 AM</option>
                         <option value="2" >10 AM</option>
@@ -78,20 +78,23 @@
                         <option value="15" >11 PM</option>
                     </select>
                 </div>
-                <div class="form-group">
+                <div class="form-group person">
+                    <h2>Select Person</h2>
                     <select id="dropdown" class="form-control" required>
-                        <option value="1" >1</option>
-                        <option select value="2" selected>2</option>
-                        <option value="3" >3</option>
-                        <option value="4" >4</option>
-                        <option value="5" >5</option>
-                        <option value="6" >6</option>
-                        <option value="7" >7</option>
-                        <option value="8" >8</option>
-                        <option value="9" >9</option>
-                        <option value="10" >10</option>
+                        <option value="1" >1 person</option>
+                        <option select value="2" selected>2 person</option>
+                        <option value="3" >3 person</option>
+                        <option value="4" >4 person</option>
+                        <option value="5" >5 person</option>
+                        <option value="6" >6 person</option>
+                        <option value="7" >7 person</option>
+                        <option value="8" >8 person</option>
+                        <option value="9" >9 person</option>
+                        <option value="10" >10 person</option>
                     </select>
-                    <p>person</p>
+                </div>
+                <div class="form-submit">
+                    <button id="submit" type="submit" class="submit-button" value="Submit">Book A Table</button>
                 </div>
             </form>
         </div>
