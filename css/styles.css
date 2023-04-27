@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/* on :hover
-from 30% 70% 56% 44% / 30% 30% 70% 70% 
-to 73% 27% 38% 62% / 72% 59% 41% 28%  */
-
 *, 
 *::before, 
 *::after {
@@ -23,6 +19,10 @@ h1, h2, h3, h4, h5 {
 
 h1 {
     font-size: 23px;
+}
+
+h2 {
+    font-size: 19;
 }
 
 p {
@@ -47,7 +47,7 @@ nav {
 
 .nav-item a {
     text-decoration: none;
-    color: black;
+    color: #495e57;
     padding: 1rem 2rem;
 }
 
@@ -89,7 +89,6 @@ nav {
     padding: 1rem;
     color: #495e57;
 }
-
 
 .main-bowl {
     max-width: 50vh;
@@ -143,3 +142,46 @@ nav {
     }
 }
 
+
+.section-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.section-three h1 {
+    font-size: 50px;
+    padding: 1rem;
+    color: #495e57;
+}
+
+.pop-bowls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 13rem;
+    margin: 3rem;
+}
+
+.best-selling > img {
+    max-width: 50vh;
+    border-radius: 100px;
+}
+
+.menu-btn {
+    margin: 2rem;
+}
+
+.menu-btn a {
+    text-decoration: none;
+    background-color: #495e57;
+    color: whitesmoke;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+}
+
+.menu-btn a:hover {
+    color: #495e57;
+    background-color: #f3c922;
+}
