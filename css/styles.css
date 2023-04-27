@@ -18,11 +18,13 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    font-size: 23px;
+    font-size: 50px;
+    padding: 1rem;
+    color: #495e57;
 }
 
 h2 {
-    font-size: 19;
+    font-size: 30px;
 }
 
 p {
@@ -229,4 +231,43 @@ footer p {
 footer img {
     max-height: 4rem;
     margin-top: 2rem;
+}
+
+
+/*  */
+/* Menu Section */
+/*  */
+
+
+h1.menu-headding {
+    text-align: center;
+}
+
+hr {
+    height: 2px;
+    background-color: #495e57;
+    border-color: #495e57;
+    margin: 0rem 5rem;
+  }
+
+h2.sub-headding {
+    text-align: center;
+    margin: 1rem;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 4rem;
+    gap: 2rem;
+}
+
+.menu-items article {
+    max-width: 40vh;
+}
+
+.left-menu h3, .middle-menu h3, .right-menu h3 {
+    margin: 2rem;
+    margin-left: 0rem;
 }
