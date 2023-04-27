@@ -15,7 +15,7 @@
     <!-- links for text fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&family=Montserrat:wght@200&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 
     <!-- logo -->
     <link rel="icon" type="image/x-icon" href="/images/Asset 9@4x.png">
@@ -27,18 +27,74 @@
             <nav>
                 <div class="navbar">
                     <ul class="nav-list">
-                        <li class="nav-item"><a href="index.html"><img id="logo" src="images/Asset 16@4x.png" alt="Logo of the Little Lemon Restaurant"></a></li>
+                        <li class="nav-item"><a href="index.html"><img id="logo" src="images/Asset 14@4x.png" alt="Logo of the Little Lemon Restaurant"></a></li>
                         <li class="nav-item"><a href="index.html">Home</a></li>
                         <li class="nav-item"><a href="menu.html">Menu</a></li>
-                        <li class="nav-item"><a href="book.html">Book</a></li>
-                        <li class="nav-item"><a href="about.html">About</a></li>
+                        <li class="nav-item"><a href="book.html">Book a Table</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
     <main>
-        
+        <div class="book">
+            <form id="survey-form"></form>
+                <div class="form-group">
+                    <p>Select A Location</p>
+                    <select id="dropdown" name="cat-or-dog" class="form-control" required>
+                        <option disabled select value selected>Select an option</option>
+                        <option value="1" >BEACON HILL</option>
+                        <option value="2" >BEVERLY HILLS</option>
+                        <option value="3" >BROOKLINE</option>
+                        <option value="4" >CAMBRIDGE</option>
+                        <option value="5" >CULVER CITY</option>
+                        <option value="6" >LEXINGTON</option>
+                        <option value="7" >NORTH ANDOVER</option>
+                        <option value="8" >SOUTH END</option>
+                        <option value="9" >BROOKLINE</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Select Date</p>
+                    <input type="date" class="form-control">
+                </div>
+                <div class="form-group">
+                    <p>Select A Time</p>
+                    <select id="dropdown" name="cat-or-dog" class="form-control" required>
+                        <option value="1" >9 AM</option>
+                        <option value="2" >10 AM</option>
+                        <option value="3" >11 AM</option>
+                        <option value="4" >12 PM</option>
+                        <option value="5" >1 PM</option>
+                        <option value="6" >2 PM</option>
+                        <option value="7" >3 PM</option>
+                        <option value="8" >4 PM</option>
+                        <option value="9" >5 PM</option>
+                        <option value="10" >6 PM</option>
+                        <option value="11" >7 PM</option>
+                        <option value="12" >8 PM</option>
+                        <option value="13" >9 PM</option>
+                        <option value="14" >10 PM</option>
+                        <option value="15" >11 PM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select id="dropdown" class="form-control" required>
+                        <option value="1" >1</option>
+                        <option select value="2" selected>2</option>
+                        <option value="3" >3</option>
+                        <option value="4" >4</option>
+                        <option value="5" >5</option>
+                        <option value="6" >6</option>
+                        <option value="7" >7</option>
+                        <option value="8" >8</option>
+                        <option value="9" >9</option>
+                        <option value="10" >10</option>
+                    </select>
+                    <p>person</p>
+                </div>
+            </form>
+        </div>
     </main>
 </body>
 
