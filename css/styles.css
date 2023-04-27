@@ -164,16 +164,24 @@ nav {
     margin: 3rem;
 }
 
+.bowl-desc {
+    max-width: 50vh;
+}
+
+.bowl-desc p {
+    margin-top: 2rem;
+}
+
 .best-selling > img {
     max-width: 50vh;
     border-radius: 100px;
 }
 
-.menu-btn {
+.section-btn {
     margin: 2rem;
 }
 
-.menu-btn a {
+.section-btn a {
     text-decoration: none;
     background-color: #495e57;
     color: whitesmoke;
@@ -181,7 +189,44 @@ nav {
     padding: 1rem 2rem;
 }
 
-.menu-btn a:hover {
+.section-btn a:hover {
     color: #495e57;
     background-color: #f3c922;
+}
+
+.section-four h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 1rem;
+    color: #495e57;
+    margin: 1rem;
+}
+
+.book-table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 7rem 5rem 7rem;
+}
+
+.book-table  p {
+    margin-bottom: 2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #495e57;
+    margin: 2rem;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+footer img {
+    max-height: 4rem;
+    margin-top: 2rem;
 }
